@@ -31,11 +31,19 @@ return { -- Autoformat
     formatters_by_ft = {
       lua = { 'stylua' },
       go = { 'gofmt' },
+      astro = { 'astro-language-server' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
       -- You can use 'stop_after_first' to run the first available formatter from the list
       javascript = { 'prettierd', 'prettier', stop_after_first = true },
+      javascriptreact = { 'prettierd', 'prettier' },
+      typescript = { 'prettierd', 'prettier' },
+      typescriptreact = { 'prettierd', 'prettier' },
+      css = { 'prettierd', 'prettier' },
+      html = { 'prettierd', 'prettier' },
+      markdown = { 'prettierd', 'prettier' },
+      json = { 'prettierd', 'prettier' },
     },
   },
 }
