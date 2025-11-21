@@ -434,6 +434,8 @@ require('lazy').setup({
         -- Prettierd
         prettierd = {},
 
+        emmet_language_server = {},
+
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
