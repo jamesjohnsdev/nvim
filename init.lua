@@ -421,6 +421,10 @@ require('lazy').setup({
         --
         --ESLint Language Server
         eslint = {},
+        eslint_d = {},
+
+        -- CSS LSP
+        stylelint_lsp = {},
         --
         --Astro Language Server
         astro = {},
@@ -586,8 +590,7 @@ require('lazy').setup({
   --
   require 'kickstart.plugins.debug',
   require 'kickstart.plugins.indent_line',
-  -- Lint plugin requires additional setup
-  -- require 'kickstart.plugins.lint',
+  require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.neo-tree',
 
