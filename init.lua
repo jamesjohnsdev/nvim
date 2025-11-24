@@ -422,9 +422,6 @@ require('lazy').setup({
         --ESLint Language Server
         eslint = {},
         eslint_d = {},
-
-        -- CSS LSP
-        stylelint_lsp = {},
         --
         --Astro Language Server
         astro = {},
