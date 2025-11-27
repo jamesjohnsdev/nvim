@@ -1,3 +1,4 @@
+require 'custom.settings.leader'
 require 'custom.settings.indent'
 require 'custom.settings.keymaps'
 

@@ -20,9 +20,10 @@
 =====================================================================
 =====================================================================
 
--- Set <space> as the leader key
--- See `:help mapleader`
---  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
+[[ Custom Settings ]]
+-- This must be loaded at top of init.lua
+require 'custom.settings'
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -246,8 +247,5 @@ require('lazy').setup({
     },
   },
 })
-
-require 'custom.settings'
-
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
