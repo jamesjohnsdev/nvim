@@ -216,6 +216,7 @@ return {
       --
       --ESLint Language Server
       eslint = {},
+      eslint_d = {},
       --
       --Astro Language Server
       astro = {},
@@ -228,6 +229,8 @@ return {
       --
       -- Prettierd
       prettierd = {},
+
+      emmet_language_server = {},
 
       lua_ls = {
         -- cmd = { ... },
