@@ -232,6 +232,10 @@ return {
 
       emmet_language_server = {},
 
+      -- css
+      css_variables = {},
+      cssmodules_ls = {},
+
       lua_ls = {
         -- cmd = { ... },
         -- filetypes = { ... },
