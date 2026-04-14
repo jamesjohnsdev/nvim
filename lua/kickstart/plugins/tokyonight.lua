@@ -11,6 +11,14 @@ return { -- You can easily change to a different colorscheme.
       styles = {
         comments = { italic = false }, -- Disable italics in comments
       },
+      on_highlights = function(hl, c)
+        hl.BlinkCmpMenu = { bg = c.bg_dark, fg = c.fg }
+        hl.BlinkCmpMenuBorder = { fg = c.blue, bg = c.bg_dark }
+        hl.BlinkCmpMenuSelection = { bg = c.bg_highlight, bold = true }
+        hl.BlinkCmpLabelMatch = { fg = c.blue, bold = true }
+        hl.BlinkCmpDoc = { bg = c.bg_dark }
+        hl.BlinkCmpDocBorder = { fg = c.blue, bg = c.bg_dark }
+      end,
     }
 
     -- Load the colorscheme here.
