@@ -271,6 +271,11 @@ return {
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
       'stylua', -- Used to format Lua code
+      'gofumpt',
+      'goimports-reviser',
+      'golangci-lint',
+      'jsonlint',
+      'actionlint',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
