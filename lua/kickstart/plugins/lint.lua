@@ -54,7 +54,15 @@ return {
           -- Only run the linter in buffers that you can modify in order to
           -- avoid superfluous noise, notably within the handy LSP pop-ups that
           -- describe the hovered symbol using Markdown.
-          if vim.bo.modifiable then
+          if not vim.bo.modifiable then
+            return
+          end
+
+          -- actionlint only makes sense for GitHub Actions workflow files,
+          -- not yaml generally, so scope it by path instead of filetype.
+          if vim.fn.expand '%:p':match '/%.github/workflows/.*%.ya?ml$' then
+            lint.try_lint 'actionlint'
+          else
             lint.try_lint()
           end
         end,
