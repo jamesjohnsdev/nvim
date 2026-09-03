@@ -30,7 +30,7 @@ return { -- Autoformat
     end,
     formatters_by_ft = {
       lua = { 'stylua' },
-      go = { 'gofmt' },
+      go = { 'goimports-reviser', 'gofumpt' }, -- keep this order so gofumpt format isn't undone
       astro = { 'astro-language-server' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
